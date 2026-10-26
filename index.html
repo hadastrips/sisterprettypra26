@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --brown: #8D6E63;
+            --brown: #5D4037; /* חום חזק וכהה יותר */
             --orange: #E76F51;
             --sage: #9CAF88;
             --bg-color: #F4F4F6;
@@ -127,6 +127,7 @@
             margin-bottom: 25px;
             box-shadow: 0 3px 12px rgba(0,0,0,0.06);
             border-top: 5px solid var(--brown);
+            scroll-margin-top: 20px; /* ריווח בעת גלילה לעוגן */
         }
 
         .day-card h3 {
@@ -276,14 +277,14 @@
             <h2>2-4/11</h2>
             
             <div class="quick-links">
-                <a href="https://maps.app.goo.gl/oiyLCJugsBgm1iQNA" target="_blank" class="quick-link-btn">
+                <a href="https://maps.app.goo.gl/eQhVusGBRuX3LpTD9" target="_blank" class="quick-link-btn">
                     <i class="fas fa-home"></i> מיקום הדירה
                 </a>
                 <a href="https://www.accuweather.com/en/cz/prague/125594/weather-forecast/125594" target="_blank" class="quick-link-btn">
                     <i class="fas fa-cloud-sun"></i> תחזית מזג אוויר
                 </a>
-                <a href="https://maps.app.goo.gl/rxeR8M7iMkWDMJcKA" target="_blank" class="quick-link-btn">
-                    <i class="fas fa-menorah"></i> בית חב"ד
+                <a href="#kosher-restaurants" class="quick-link-btn">
+                    <i class="fas fa-star-of-david"></i> מסעדות כשרות
                 </a>
             </div>
         </header>
@@ -362,7 +363,7 @@
                     </summary>
                     <div class="details-content">
                         <div class="info-row"><i class="fas fa-bed"></i> <span>הגעה לדירה להתאוששות והתרעננות.</span></div>
-                        <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/oiyLCJugsBgm1iQNA" target="_blank">ניווט לדירה</a></span></div>
+                        <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/eQhVusGBRuX3LpTD9" target="_blank">ניווט לדירה</a></span></div>
                     </div>
                 </details>
 
@@ -373,6 +374,7 @@
                     </summary>
                     <div class="details-content">
                         <div class="info-row"><i class="fas fa-spa"></i> <span>מכון מסאז' עם מבחר טיפולים במחירים משתלמים.</span></div>
+                        <div class="info-row"><i class="fas fa-clock"></i> <span>שעות פתיחה: 10:00 - 22:00</span></div>
                         <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><a href="https://maps.app.goo.gl/SbdMv3L74wjirxYV9" target="_blank">מיקום המכון</a></span></div>
                         <div class="info-row"><i class="fas fa-link"></i> <span><a href="https://www.thaispatraditionalthaimassage.cz/?gad_source=6&gad_campaignid=23927919480&gclid=Cj0KCAjw0fbWBhBkEi0AwJuQ8fpJcJ_pIHXf-zJ2zkxWRlBHgIpCY2HWCDeES_VbJUu-E4slVxmBLeIaAg95EALw_wcB" target="_blank">אתר להזמנה מראש</a></span></div>
                     </div>
@@ -532,7 +534,7 @@
             </div>
 
             <!-- Kosher Restaurants Section -->
-            <div class="day-card">
+            <div class="day-card" id="kosher-restaurants">
                 <h3><i class="fas fa-star-of-david"></i> מסעדות כשרות בפראג</h3>
                 
                 <details>
